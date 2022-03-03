@@ -1,0 +1,26 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #000;
+  width: 100%;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+}
+.header-logo {
+  border: solid 1px #fff;
+  border-top: none;
+  border-left: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 0.5rem;
+}
+
+.header-rights {
+  border: solid 0.1px #fff;
+}
