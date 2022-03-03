@@ -23,4 +23,78 @@ header {
 
 .header-rights {
   border: solid 0.1px #fff;
+  border-left: none;
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 0.5rem;
+}
+
+.header-logo img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 0.5rem;
+  border: solid 0.1px #fff;
+  border-left: none;
+  border-top: none;
+}
+
+.header-search input {
+  height: 2rem;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 0.1px solid #fff;
+  flex: 0.8;
+  color: #fff;
+}
+
+.header-search button {
+  background: transparent;
+  outline: none;
+  border: none;
+  flex: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon i,
+.header-home {
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.search-icon i:hover,
+.header-home:hover {
+  color: #fff;
+}
+
+.header-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+  height: 100%;
+  border-bottom: 0.1px solid #fff;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr 2fr 0.5fr;
+  }
+  .header-rights {
+    display: none;
+  }
 }
