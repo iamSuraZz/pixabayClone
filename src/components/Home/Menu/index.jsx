@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import { menuItems } from "./data";
+import "./styles.css";
 
-const Menu = () => {
-  return (
-    <div>
-        <h1>Menu Component</h1>
-    </div>
-  )
-}
+const Menu = () => (
+  <nav>
+    <ul>
+      {menuItems.map(({ label, id }) => (
+        <li key={id}>{label}</li>
+      ))}
+    </ul>
+  </nav>
+);
 
 export default Menu;

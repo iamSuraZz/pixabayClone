@@ -1,0 +1,44 @@
+nav {
+  margin-bottom: 3.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  height: 100%;
+  padding: 1rem 2rem;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s ease-out;
+  border: solid 1px #fff;
+  width: fit-content;
+}
+
+nav ul li:hover {
+  color: #000;
+}
+
+nav ul li::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  position: absolute;
+  transition: all 0.5s ease-out;
+}
+
+nav ul li:hover:before {
+  transform: scaleX(1);
+}

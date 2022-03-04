@@ -5,30 +5,30 @@ import Footer from "../../components/Home/Footer";
 import Header from "../../components/Home/Header";
 import Menu from "../../components/Home/Menu";
 import ResultsList from "../../components/Home/ResultsList";
+import "./styles.css";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home page view</h1>
-
+    <>
       {/* Header */}
       <Header />
 
-      {/* Menu */}
-      <Menu />
+      <main>
+        {/* Menu */}
+        <Menu />
 
-      {/* Loader */}
-      <Loader />
+        {/* Loader */}
+        <Loader />
 
-      {/* Empty List View */}
-      <EmptyListComp />
+        {/* Empty List View */}
+        <EmptyListComp />
 
-      {/* ImageList */}
-      <ResultsList />
-
+        {/* ImageList */}
+        <ResultsList />
+      </main>
       {/* Footer */}
       <Footer />
-    </div>
+    </>
   );
 };
 
