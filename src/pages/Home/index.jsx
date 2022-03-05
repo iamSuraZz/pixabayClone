@@ -24,7 +24,7 @@ const Home = () => {
         <EmptyListComp />
 
         {/* ImageList */}
-        <ResultsList />
+        <ResultsList images={[]} />
       </main>
       {/* Footer */}
       <Footer />

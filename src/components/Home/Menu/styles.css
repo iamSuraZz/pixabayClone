@@ -6,6 +6,7 @@ nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav ul li {
@@ -41,4 +42,12 @@ nav ul li::before {
 
 nav ul li:hover:before {
   transform: scaleX(1);
+}
+
+/* Media Queries */
+
+@media (max-width: 576px) {
+  nav ul li {
+    padding: 0.5rem 1.5rem;
+  }
 }

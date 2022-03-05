@@ -16,12 +16,12 @@ const Header = () => (
       <div className="header-search">
         <input type="text" required />
         <button className="search-icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i className="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
     </form>
     <div className="header-home">
-      <i class="fa-solid fa-house"></i>
+      <i className="fa-solid fa-house"></i>
     </div>
   </header>
 );

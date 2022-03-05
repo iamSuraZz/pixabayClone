@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
+import "./styles.css";
 
-const ResultsList = () => {
-  return (
-    <div>
-        <h1>ResultsList</h1>
-        </div>
-  )
-}
-
+const ResultsList = ({ images }) => (
+  <div className="resultList-container">
+    {images.map((image) => (
+      <img key={image.id} src={image.largeImageURL} alt="img" />
+    ))}
+  </div>
+);
 export default ResultsList;
