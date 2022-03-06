@@ -14,7 +14,22 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [imagesList, setImagesList] = useState([]);
   const [searchInput, setSearchInput] = useState("");
-  const [searchResultsCount, setSearchResultsCount] = useState(20);
+  const [searchResultsCount, setSearchResultsCount] = useState(30);
+
+  const searchResults = (search) => {
+    setLoading(true);
+    setShowMenu(false);
+
+    axios
+      .get(
+        `${pixabayAPI.url}?key=${pixabayAPI.key}&q=${search}&image_type=photo&per_page=${searchResultsCount}&safeSearch=true`
+      )
+      .then((res) => {
+        setImagesList(res.data.hits);
+        setLoading(false);
+      })
+      .catch((err) => console.log(err));
+  };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
