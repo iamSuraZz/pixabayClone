@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import LottieAnimation from "./LottieAnimation";
+import { lottieLoader } from "./LottieAnimation/lottieData";
 
 const Loader = () => {
   return (
     <div>
-        <h1>Loader</h1>
+      <LottieAnimation file={lottieLoader} width="300px" height="300px" />
     </div>
-  )
-}
+  );
+};
 
 export default Loader;
